@@ -20,11 +20,11 @@ function calculo() {
     }
 }
 
-let tela = document.querySelector('body');
+/*let tela = document.querySelector('body');
 let btnCor = document.querySelector('#btnCor');
 
 btnCor.addEventListener('click', trocaCor);
 
 function trocaCor() {
     tela.classList.add("cor");
-}
+} */

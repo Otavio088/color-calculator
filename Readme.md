@@ -1,0 +1,1 @@
+Olá! Fiz esse Projeto com a intensão de Simular uma Calculadora Simples usando HTML, CSS e JAVASCRIPT.

@@ -20,11 +20,19 @@ function calculo() {
     }
 }
 
-/*let tela = document.querySelector('body');
-let btnCor = document.querySelector('#btnCor');
 
-btnCor.addEventListener('click', trocaCor);
+const telaTotal = document.querySelector("body");
+const corCalculadora = document.querySelector(".calculadora");
+const corBotao = document.querySelector("button");
+const corBotaoIgual = document.querySelector("span");
+
+const btnCor = document.querySelector("#btnCor");
+
+btnCor.addEventListener("click", trocaCor);
 
 function trocaCor() {
-    tela.classList.add("cor");
-} */
+    telaTotal.classList.add("cor");
+    corCalculadora.classList.add("corCalcula");
+    corBotao.classList.add("corButton");
+    corBotaoIgual.classList.add("corIgual");
+}

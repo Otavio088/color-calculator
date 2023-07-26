@@ -17,6 +17,7 @@ h1 {
     left: 50%;
     top: 8%;
     transform: translate(-50%, -8%);
+    text-shadow: 1px 1px 0px #111111;
 }
 
 .divCor {
@@ -57,7 +58,7 @@ h1 {
 
 .tela {
     background-color: #ececec;
-    height: 65px;
+    height: 80px;
     color: #2d3436;
     font-size: 16px;
     text-align: end;
@@ -87,8 +88,23 @@ p {
     top: 95%;
     transform: translate(-50%, -95%);
     font-size: 10px;
+    text-shadow: 1px 1px 0px #111111;
 }
 
-/* .cor {
-    background-color: red;
-} */
+
+
+.cor {
+    background: linear-gradient(150deg, #636e72, #b2bec3, #636e72);
+}
+
+.corCalcula {
+    background-color: #2d3436;
+}
+
+.corButton {
+    background-color: #000000;
+}
+
+.corIgual {
+    background-color: #d63031;
+}

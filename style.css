@@ -90,21 +90,3 @@ p {
     font-size: 10px;
     text-shadow: 1px 1px 0px #111111;
 }
-
-
-
-.cor {
-    background: linear-gradient(150deg, #636e72, #b2bec3, #636e72);
-}
-
-.corCalcula {
-    background-color: #2d3436;
-}
-
-.corButton {
-    background-color: #000000;
-}
-
-.corIgual {
-    background-color: #d63031;
-}

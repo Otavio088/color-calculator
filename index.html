@@ -10,50 +10,54 @@
     </head>
     <body>
         <main>
-        <div>
-            <h1>Calculadora Simples</h1>
-        </div>
-        <div class="divCor">
-            <button id="btnCor">Cor</button>
-        </div>
-        <div class="calculadora"> 
-            <div id="trocaTela" class="tela"></div>
-            <table>
-                <tr>
-                    <td colspan="2"><button onclick ="limpar()" style="width: 100%;">C</button></td>
-                    <td><button onclick ="voltar()">←</button></td>
-                    <td><button onclick ="inserir('+')" class="color-sinal">+</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick ="inserir('7')">7</button></td>
-                    <td><button onclick ="inserir('8')">8</button></td>
-                    <td><button onclick ="inserir('9')">9</button></td>
-                    <td><button onclick ="inserir('-')" class="color-sinal">-</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick ="inserir('4')">4</button></td>
-                    <td><button onclick ="inserir('5')">5</button></td>
-                    <td><button onclick ="inserir('6')">6</button></td>
-                    <td><button onclick ="inserir('*')" class="color-sinal">*</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick ="inserir('1')">1</button></td>
-                    <td><button onclick ="inserir('2')">2</button></td>
-                    <td><button onclick ="inserir('3')">3</button></td>
-                    <td><button onclick ="inserir('/')" class="color-sinal">÷</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick ="inserir('0')">0</button></td>
-                    <td><button onclick ="inserir('.')">.</button></td>
-                    <span><td colspan="2"><button id="botaoIgual" style="width: 100%;
-                        background-color: #0984e3;" onclick ="calculo()">=</button></td></span>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <p>&copy; | Otávio Augusto de Melo Ribeiro.</p>
-        </div>
-    </main>
+            <div>
+                <h1>Calculadora Simples</h1>
+            </div>
+            <div class="divCor">
+                <button id="btnCor">Cor</button>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <div class="calculadora"> 
+                    <div id="trocaTela" class="tela"></div>
+                    <table>
+                        <tr>
+                            <td colspan="2"><button onclick ="limpar()" style="width: 100%;">C</button></td>
+                            <td><button onclick ="voltar()">←</button></td>
+                            <td><button onclick ="inserir('+')" class="color-sinal">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick ="inserir('7')">7</button></td>
+                            <td><button onclick ="inserir('8')">8</button></td>
+                            <td><button onclick ="inserir('9')">9</button></td>
+                            <td><button onclick ="inserir('-')" class="color-sinal">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick ="inserir('4')">4</button></td>
+                            <td><button onclick ="inserir('5')">5</button></td>
+                            <td><button onclick ="inserir('6')">6</button></td>
+                            <td><button onclick ="inserir('*')" class="color-sinal">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick ="inserir('1')">1</button></td>
+                            <td><button onclick ="inserir('2')">2</button></td>
+                            <td><button onclick ="inserir('3')">3</button></td>
+                            <td><button onclick ="inserir('/')" class="color-sinal">÷</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick ="inserir('0')">0</button></td>
+                            <td><button onclick ="inserir('.')">.</button></td>
+                            <span><td colspan="2"><button id="botaoIgual" style="width: 100%;
+                                background-color: #0984e3;" onclick ="calculo()">=</button></td></span>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="copy">
+                <p>&copy; | Otávio Augusto de Melo Ribeiro.</p>
+            </div>
+        </main>
     </body>
     <script src="script.js"></script>
 </html>

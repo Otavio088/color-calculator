@@ -1,1 +1,1 @@
-Olá! Fiz esse Projeto com a intensão de Simular uma Calculadora Simples usando HTML, CSS e JAVASCRIPT.
+Olá! Fiz esse Projeto com a intensão de simular calculos de uma Calculadora Simples. Também adicionei um botão que altera as cores. Usei as linguagens HTML, CSS e JAVASCRIPT.

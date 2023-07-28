@@ -1,3 +1,4 @@
+//CALCULO
 function inserir(num) {
   document.querySelector(".tela").textContent += num;
 }
@@ -21,43 +22,61 @@ if (tela) {
 }
 
 
-const body = document.querySelector("body");
+//COR
+const background = document.querySelector("body");
 const calculadora = document.querySelector(".calculadora");
-const trocaTela = document.querySelector("#trocaTela");
+const telaCalculadora = document.querySelector("#trocaTela");
 const botao = document.querySelectorAll("button");
-const botaoIgual = document.querySelector("#botaoIgual");
-
+const backgroundBotaoIgual = document.querySelector("#botaoIgual");
 const btnCor = document.querySelector("#btnCor");
-
 btnCor.addEventListener("click", trocaCor);
 
+let teste = 0;
 
 function trocaCor() {
-let calculadoraCorAtual = calculadora.style.backgroundColor
-calculadoraCorAtual.style.backgroundColor = '#fff'
-console.log(calculadoraCorAtual.style.backgroundColor)
 
-if (calculadoraCorAtual != "#2d3436") {
-  body.style.background = 'linear-gradient(150deg, #636e72, #b2bec3, #636e72)';
-  calculadora.style.backgroundColor = '#2d3436'
-  trocaTela.style.backgroundColor = '#111'
-  trocaTela.style.color = '#fff'
+let corCalculadora = calculadora.style.backgroundColor
 
-  for(let i = 0; i<botao.length; i++) {
+if (corCalculadora != "var(--dark-color)") {
+  background.style.background = 'linear-gradient(150deg, #636e72, #b2bec3, #636e72)';
+  calculadora.style.backgroundColor = 'var(--dark-color)'
+  telaCalculadora.style.backgroundColor = '#111'
+  telaCalculadora.style.color = '#fff'
+  for (let i = 0; i < botao.length - 1; i++) {
     botao[i].style.backgroundColor = '#000'
+    botao[i].style.color = '#ececec'
   }
-
-  botaoIgual.style.backgroundColor ='#d63031'
-  return;
-} else if (calculadoraCorAtual == "#2d3436") {
-  body.style.background  = 'linear-gradient(150deg,#bdc3c7, #ecf0f1, #bdc3c7)';
+  backgroundBotaoIgual.style.backgroundColor ='#d63031'
+  teste = 1;
+} else {
+  background.style.background  = 'linear-gradient(150deg,#bdc3c7, #ecf0f1, #bdc3c7)';
   calculadora.style.backgroundColor = '#000'
-  trocaTela.style.backgroundColor = '#ececec'
-  trocaTela.style.color = '#2d3436'
-  
-  for(let i = 0; i<botao.length; i++) {
+  corCalculadora = 'backgroundCalculadora.style.backgroundColor'
+  telaCalculadora.style.backgroundColor = '#ececec'
+  telaCalculadora.style.color = '#2d3436'
+  for (let i = 0; i < botao.length - 1; i++) {
     botao[i].style.backgroundColor = '#2d3436'
+    botao[i].style.color = '#ececec'
   }
-  botaoIgual.style.backgroundColor ='#0984e3'
+  backgroundBotaoIgual.style.backgroundColor ='#0984e3'
+  teste = 2;
   }
+}
+
+for (let i = 0; i < botao.length - 1; i++) {
+  botao[i].addEventListener("mouseleave", () => {
+    if (teste == 1) {
+      botao[i].style.backgroundColor = "#000";
+    } else if (teste == 0) {
+        botao[i].style.backgroundColor = "var(--dark-color)";
+    } else {
+      botao[i].style.backgroundColor = "var(--dark-color)";
+    }
+  });
+}
+
+for (let i = 0; i < botao.length - 1; i++) {
+botao[i].addEventListener("mouseenter", () => {
+  botao[i].style.backgroundColor = "#576264";
+});
 }

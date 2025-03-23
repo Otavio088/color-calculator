@@ -26,10 +26,10 @@ Check out the calculator in action in the videos below:
 ## ⚙️ How to Run the Project Locally
 ```sh
 # Clone this repository
-git clone https://github.com/Otavio088/Calculadora.git
+git clone https://github.com/Otavio088/color-calculator.git
 
 # Navigate to the project folder
-cd Calculadora
+cd color-calculator
 
 # Open the index.html file in your browser
 ```
